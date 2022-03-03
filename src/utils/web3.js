@@ -5,7 +5,7 @@ import Web3 from 'web3'
  * @returns new Web3
  */
 export function getWeb3() {
-  const provider = new Web3.providers.HttpProvider('https://http-mainnet.hecochain.com')
+  const provider = new Web3.providers.HttpProvider('https://bsc-dataseed1.binance.org')
   return new Web3(provider)
 }
 

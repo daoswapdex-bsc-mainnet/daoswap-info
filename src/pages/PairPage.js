@@ -477,7 +477,7 @@ function PairPage({ pairAddress, history }) {
                     </AutoRow>
                   </Column>
                   <ButtonLight color={backgroundColor}>
-                    <Link color={backgroundColor} external href={'https://hecoinfo.com/address/' + pairAddress}>
+                    <Link color={backgroundColor} external href={'https://bscscan.com/address/' + pairAddress}>
                       View on Etherscan ↗
                     </Link>
                   </ButtonLight>
