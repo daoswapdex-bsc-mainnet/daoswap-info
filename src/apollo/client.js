@@ -4,8 +4,7 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    // uri: 'https://api.thegraph.com/subgraphs/name/daoswap002/daoswapdex-bsc',
-    uri: 'https://api.thegraph.com/subgraphs/id/QmaHYEBcpgJTbZNUscifkNqLoikc5XZ1Up14Ffi2AqTN6E',
+    uri: 'https://api.thegraph.com/subgraphs/name/daoswap002/daoswapdex-bsc',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
