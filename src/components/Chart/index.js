@@ -63,8 +63,8 @@ const Chart = ({ data, chartOption, currencyUnit, symbol }) => {
               strokeWidth={2}
               dot={false}
               type="monotone"
-              name={currencyUnit === 'HT' ? 'Price (HT/' + symbol + ')' : 'Price (USD/' + symbol + ')'}
-              dataKey={currencyUnit === 'HT' ? 'ethPerToken' : 'tokenPriceUSD'}
+              name={currencyUnit === 'BNB' ? 'Price (BNB/' + symbol + ')' : 'Price (USD/' + symbol + ')'}
+              dataKey={currencyUnit === 'BNB' ? 'ethPerToken' : 'tokenPriceUSD'}
               yAxisId={2}
               fill="var(--c-token)"
               opacity={'0.4'}
@@ -74,7 +74,7 @@ const Chart = ({ data, chartOption, currencyUnit, symbol }) => {
               strokeWidth={2}
               dot={false}
               type="monotone"
-              name={currencyUnit === 'USD' ? 'Inverse (' + symbol + '/USD)' : 'Inverse (' + symbol + '/HT)'}
+              name={currencyUnit === 'USD' ? 'Inverse (' + symbol + '/USD)' : 'Inverse (' + symbol + '/BNB)'}
               dataKey={currencyUnit === 'USD' ? 'tokensPerUSD' : 'tokensPerEth'}
               yAxisId={3}
               fill="var(--c-token)"
@@ -153,7 +153,7 @@ const Chart = ({ data, chartOption, currencyUnit, symbol }) => {
               strokeWidth={2}
               dot={false}
               type="monotone"
-              name={'Total Liquidity' + (currencyUnit === 'USD' ? ' (USD)' : ' (HT)')}
+              name={'Total Liquidity' + (currencyUnit === 'USD' ? ' (USD)' : ' (BNB)')}
               dataKey={currencyUnit === 'USD' ? 'usdLiquidity' : 'ethLiquidity'}
               yAxisId={0}
               fill="var(--c-token)"
@@ -222,7 +222,7 @@ const Chart = ({ data, chartOption, currencyUnit, symbol }) => {
             />
             <Bar
               type="monotone"
-              name={'Volume' + (currencyUnit === 'USD' ? ' (USD)' : ' (HT)')}
+              name={'Volume' + (currencyUnit === 'USD' ? ' (USD)' : ' (BNB)')}
               dataKey={currencyUnit === 'USD' ? 'usdVolume' : 'ethVolume'}
               fill="var(--c-token)"
               opacity={'0.4'}
