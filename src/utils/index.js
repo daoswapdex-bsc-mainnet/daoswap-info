@@ -42,14 +42,14 @@ export function getPoolLink(token0Address, token1Address = null, remove = false)
     return (
       `https://app.daoswap.cc/` +
       (remove ? `remove` : `add`) +
-      `/${token0Address === '0x5545153ccfca01fbd7dd11c0b23ba694d9509a6f' ? 'BNB' : token0Address}/${'BNB'}`
+      `/${token0Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'BNB' : token0Address}/${'BNB'}`
     )
   } else {
     return (
       `https://app.daoswap.cc/` +
       (remove ? `remove` : `add`) +
-      `/${token0Address === '0x5545153ccfca01fbd7dd11c0b23ba694d9509a6f' ? 'BNB' : token0Address}/${
-        token1Address === '0x5545153ccfca01fbd7dd11c0b23ba694d9509a6f' ? 'BNB' : token1Address
+      `/${token0Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'BNB' : token0Address}/${
+        token1Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'BNB' : token1Address
       }`
     )
   }
@@ -60,17 +60,17 @@ export function getSwapLink(token0Address, token1Address = null) {
     return `https://app.daoswap.cc/swap?inputCurrency=${token0Address}`
   } else {
     return `https://app.daoswap.cc/swap?inputCurrency=${
-      token0Address === '0x5545153ccfca01fbd7dd11c0b23ba694d9509a6f' ? 'BNB' : token0Address
-    }&outputCurrency=${token1Address === '0x5545153ccfca01fbd7dd11c0b23ba694d9509a6f' ? 'BNB' : token1Address}`
+      token0Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'BNB' : token0Address
+    }&outputCurrency=${token1Address === '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c' ? 'BNB' : token1Address}`
   }
 }
 
 export function getMiningPoolLink(token0Address) {
-  return `https://app.daoswap.cc/#/uni/BNB/${token0Address}`
+  return `https://app.daoswap.cc/#/dao/BNB/${token0Address}`
 }
 
 export function getUniswapAppLink(linkVariable) {
-  let baseUniswapUrl = 'https://app.daoswap.cc/#/uni'
+  let baseUniswapUrl = 'https://app.daoswap.cc/#/dao'
   if (!linkVariable) {
     return baseUniswapUrl
   }
